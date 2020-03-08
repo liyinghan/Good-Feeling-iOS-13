@@ -14,6 +14,15 @@
 		1C55478C240B745E00ED5C66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C55478A240B745E00ED5C66 /* Main.storyboard */; };
 		1C55478E240B746000ED5C66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C55478D240B746000ED5C66 /* Assets.xcassets */; };
 		1C554791240B746000ED5C66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C55478F240B746000ED5C66 /* LaunchScreen.storyboard */; };
+		1C55479F241123D800ED5C66 /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1C55479E241123D700ED5C66 /* alarm_sound.mp3 */; };
+		1C5547A124112CA200ED5C66 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5547A024112CA200ED5C66 /* ThirdViewController.swift */; };
+		1CAC9C042413369F004F28E0 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAC9C032413369F004F28E0 /* WeatherManager.swift */; };
+		1CAC9C06241346D6004F28E0 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAC9C05241346D6004F28E0 /* WeatherData.swift */; };
+		1CAC9C0824136354004F28E0 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAC9C0724136354004F28E0 /* WeatherModel.swift */; };
+		1CAC9C0B2413C372004F28E0 /* newbackground_dark.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1CAC9C092413C372004F28E0 /* newbackground_dark.pdf */; };
+		1CAC9C0C2413C372004F28E0 /* newbackground.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1CAC9C0A2413C372004F28E0 /* newbackground.pdf */; };
+		1CDADC3F24123FD200B6B00D /* light_background.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1CDADC3D24123FD200B6B00D /* light_background.pdf */; };
+		1CDADC4024123FD200B6B00D /* dark_background.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1CDADC3E24123FD200B6B00D /* dark_background.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +35,15 @@
 		1C55478D240B746000ED5C66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C554790240B746000ED5C66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C554792240B746000ED5C66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C55479E241123D700ED5C66 /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_sound.mp3; sourceTree = "<group>"; };
+		1C5547A024112CA200ED5C66 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		1CAC9C032413369F004F28E0 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		1CAC9C05241346D6004F28E0 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		1CAC9C0724136354004F28E0 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		1CAC9C092413C372004F28E0 /* newbackground_dark.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = newbackground_dark.pdf; path = Assets.xcassets/GreenBackground.imageset/newbackground_dark.pdf; sourceTree = "<group>"; };
+		1CAC9C0A2413C372004F28E0 /* newbackground.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = newbackground.pdf; path = Assets.xcassets/GreenBackground.imageset/newbackground.pdf; sourceTree = "<group>"; };
+		1CDADC3D24123FD200B6B00D /* light_background.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = light_background.pdf; path = Assets.xcassets/recbackground.imageset/light_background.pdf; sourceTree = "<group>"; };
+		1CDADC3E24123FD200B6B00D /* dark_background.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = dark_background.pdf; path = Assets.xcassets/recbackground.imageset/dark_background.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +78,47 @@
 			children = (
 				1C554782240B745E00ED5C66 /* AppDelegate.swift */,
 				1C554784240B745E00ED5C66 /* SceneDelegate.swift */,
-				1C554786240B745E00ED5C66 /* FirstViewController.swift */,
-				1C554788240B745E00ED5C66 /* SecondViewController.swift */,
-				1C55478A240B745E00ED5C66 /* Main.storyboard */,
+				1C55479C240BD75100ED5C66 /* Models */,
+				1C55479B240BD74B00ED5C66 /* Views */,
+				1C55479D240BD75600ED5C66 /* Controllers */,
 				1C55478D240B746000ED5C66 /* Assets.xcassets */,
+				1C55479E241123D700ED5C66 /* alarm_sound.mp3 */,
 				1C55478F240B746000ED5C66 /* LaunchScreen.storyboard */,
 				1C554792240B746000ED5C66 /* Info.plist */,
+				1CDADC3E24123FD200B6B00D /* dark_background.pdf */,
+				1CDADC3D24123FD200B6B00D /* light_background.pdf */,
+				1CAC9C092413C372004F28E0 /* newbackground_dark.pdf */,
+				1CAC9C0A2413C372004F28E0 /* newbackground.pdf */,
 			);
 			path = "Good Feeling iOS 13";
+			sourceTree = "<group>";
+		};
+		1C55479B240BD74B00ED5C66 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1C55478A240B745E00ED5C66 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1C55479C240BD75100ED5C66 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1CAC9C032413369F004F28E0 /* WeatherManager.swift */,
+				1CAC9C05241346D6004F28E0 /* WeatherData.swift */,
+				1CAC9C0724136354004F28E0 /* WeatherModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1C55479D240BD75600ED5C66 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1C554786240B745E00ED5C66 /* FirstViewController.swift */,
+				1C554788240B745E00ED5C66 /* SecondViewController.swift */,
+				1C5547A024112CA200ED5C66 /* ThirdViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,8 +179,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CDADC4024123FD200B6B00D /* dark_background.pdf in Resources */,
+				1CDADC3F24123FD200B6B00D /* light_background.pdf in Resources */,
 				1C554791240B746000ED5C66 /* LaunchScreen.storyboard in Resources */,
+				1CAC9C0C2413C372004F28E0 /* newbackground.pdf in Resources */,
 				1C55478E240B746000ED5C66 /* Assets.xcassets in Resources */,
+				1C55479F241123D800ED5C66 /* alarm_sound.mp3 in Resources */,
+				1CAC9C0B2413C372004F28E0 /* newbackground_dark.pdf in Resources */,
 				1C55478C240B745E00ED5C66 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,9 +197,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CAC9C042413369F004F28E0 /* WeatherManager.swift in Sources */,
 				1C554789240B745E00ED5C66 /* SecondViewController.swift in Sources */,
+				1CAC9C06241346D6004F28E0 /* WeatherData.swift in Sources */,
 				1C554787240B745E00ED5C66 /* FirstViewController.swift in Sources */,
+				1C5547A124112CA200ED5C66 /* ThirdViewController.swift in Sources */,
 				1C554783240B745E00ED5C66 /* AppDelegate.swift in Sources */,
+				1CAC9C0824136354004F28E0 /* WeatherModel.swift in Sources */,
 				1C554785240B745E00ED5C66 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,7 +280,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -274,7 +334,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
