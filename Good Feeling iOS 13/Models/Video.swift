@@ -62,7 +62,7 @@ class Video {
         // randonly assign an array of video cells. this generates the maximun video cells
         var items:[Video] = Array()
 
-        let limit = 1
+        let limit = 2
         if items.count < limit {
             var index = items.count
             while index < limit {

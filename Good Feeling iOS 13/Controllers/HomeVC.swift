@@ -18,20 +18,22 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UISc
     var lastContentOffset: CGFloat = 0.0
     
     // set infinity scroll; total video cells
-    let totalEntries = 7
+    let pageLimit = 10
+    var limit = 10
+    let totalEntries = 12
     
     //MARK: Methods
-//    func customization() {
-//        //The custom distance that the content view is inset from the safe area or scroll view edges.
-//        self.tableView.contentInset = UIEdgeInsets(top: 50, left: 0, bottom: 30, right: 0)
-//
-//        //The distance the scroll indicators are inset from the edge of the scroll view.
-//        self.tableView.scrollIndicatorInsets = UIEdgeInsets(top: 50, left: 0, bottom: 30, right: 0)
-//
-//        //set up the view container height, you can try with different numbers,
-//        self.tableView.rowHeight = UITableView.automaticDimension
-//        self.tableView.estimatedRowHeight = 300
-//    }
+    //    func customization() {
+    //        //The custom distance that the content view is inset from the safe area or scroll view edges.
+    //        self.tableView.contentInset = UIEdgeInsets(top: 50, left: 0, bottom: 30, right: 0)
+    //
+    //        //The distance the scroll indicators are inset from the edge of the scroll view.
+    //        self.tableView.scrollIndicatorInsets = UIEdgeInsets(top: 50, left: 0, bottom: 30, right: 0)
+    //
+    //        //set up the view container height, you can try with different numbers,
+    //        self.tableView.rowHeight = UITableView.automaticDimension
+    //        self.tableView.estimatedRowHeight = 300
+    //    }
     
     func fetchData() {
         Video.fetchVideos { [weak self] response in
@@ -40,71 +42,73 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UISc
             }
             weakSelf.videos = response
             weakSelf.videos.myShuffle()
-            
-            // it looks the following line doesn;t matter for loading more tables
             //            weakSelf.tableView.reloadData()
         }
     }
     
     //MARK: Delegates
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         // Returns the number of rows (table cells) in a specified section.
-        //        print("there are \(self.videos.count) videos in the section")
+        //        print("the view will be called \(videos.count)times")
         return self.videos.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         //Asks the data source for a cell to insert in a particular location of the table view.
         let cell = tableView.dequeueReusableCell(withIdentifier: "VideoCell") as! VideoCell
+        print("index row is \(indexPath.row)")
         cell.set(video: self.videos[indexPath.row])
-        // no need to set the cell text. in this case, the video will cover the entire area
-        //        cell.textLabel?.text = "RWOWWW\(videos[indexPath.row])"
+        cell.playVideo()
         return cell
     }
     
-    
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        NotificationCenter.default.post(name: NSNotification.Name("open"), object: nil)
-//    }
-//
-//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-//        if (self.lastContentOffset > scrollView.contentOffset.y) {
-//            NotificationCenter.default.post(name: NSNotification.Name("hide"), object: false)
-//        } else {
-//            NotificationCenter.default.post(name: NSNotification.Name("hide"), object: true)
-//        }
-//    }
-//
-//    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-//        self.lastContentOffset = scrollView.contentOffset.y;
-//    }
+    //    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    //        if (self.lastContentOffset > scrollView.contentOffset.y) {
+    //            NotificationCenter.default.post(name: NSNotification.Name("hide"), object: false)
+    //        } else {
+    //            NotificationCenter.default.post(name: NSNotification.Name("hide"), object: true)
+    //        }
+    //    }
+    //
+    //    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+    //        self.lastContentOffset = scrollView.contentOffset.y;
+    //    }
     
     
     //Tells the delegate the table view is about to draw a cell for a particular row.
     // this is where infinity scroll is implemented
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        print("at this point, index path row is \(indexPath.row)")
+        print("at this point, video counts is \(videos.count)")
         if indexPath.row == videos.count - 1 {
             // we are at last cell
             if videos.count < totalEntries {
                 // we need to bring more records from server as there are some pending  records aviable
-                videos.append(Video.init(title: "12345678"))
+                videos.append(Video.init(title: ""))
+                
+                var index = videos.count
+                limit = index + 20
+                while index < limit {
+                    videos.append(Video.init(title: ""))
+                    index = index + 1
+                }
+                
             }
-            self.perform(#selector(loadTable), with: nil, afterDelay: 1.0)
+//            self.perform(#selector(loadTable), with: nil, afterDelay: 1)
+            print("after load data video count is \(videos.count)")
         }
     }
     
-    @objc func loadTable() {
-        self.tableView.reloadData()
-    }
+//    @objc func loadTable() {
+//        self.tableView.reloadData()
+//    }
     
     
     //MARK: -  ViewController Lifecylce
     override func viewDidLoad() {
         super.viewDidLoad()
         // view load, set up the customization container
-//        self.customization()
+        //        self.customization()
         // fetch data, particluarl video data
         self.fetchData()
     }
@@ -119,6 +123,20 @@ class VideoCell: UITableViewCell {
     @IBOutlet weak var videoTitle: UILabel!
     @IBOutlet weak var videoDescription: UILabel!
     
+    
+    // get a group of video IDs
+    let titles = ["8JwCrgEZK8k", "fLiozP7GVeA", " 76Rx2HjNYwc", "wQWmRIHavC8", "8IYm8OFbzOE", "B_bbBglPGHA", "PPmvRCO4VWo", "1UKIaTQ-V8M", "ue1NT3QhuVU", "VSceuiPBpxY", "tDQBCJAC5lQ", "AhdtowFDKT0"]
+    
+    var myVideo:[String] = Array()
+    
+    func playVideo() {
+        let number = Int.random(in: 0 ..< titles.count)
+        myVideo.append("\(titles[number])")
+        //        print("hello i have \(titles.count) videos")
+        purePlay.load(withVideoId: "\(self.myVideo[0])")
+    }
+    
+    // customization and set videos
     func customization()  {
         self.channelPic.layer.cornerRadius = 24
         self.channelPic.clipsToBounds  = true
@@ -136,24 +154,11 @@ class VideoCell: UITableViewCell {
         self.videoTitle.text = video.title
         //        self.videoDescription.text = "\(video.channel.name)\(video.views)"
         
-        let titles = ["8JwCrgEZK8k", "fLiozP7GVeA", " 76Rx2HjNYwc", "wQWmRIHavC8", "8IYm8OFbzOE", "B_bbBglPGHA", "PPmvRCO4VWo", "1UKIaTQ-V8M", "ue1NT3QhuVU", "VSceuiPBpxY", "tDQBCJAC5lQ", "AhdtowFDKT0" ]
-        print("Total titles are \(titles.count)")
-        var myVideo:[String] = Array()
-//        for _ in 0...2 {
-            let number = Int.random(in: 0 ..< titles.count)
-            myVideo.append("\(titles[number])")
-            print("it picks video \(number)")
-//        }
-        DispatchQueue.main.async {
-//            self.purePlay.load(withVideoId: "\(myVideo[0])")
-            self.purePlay.load(withVideoId: "\(titles[number])")
-
-        }
     } // end of set function
     
     override func awakeFromNib() {
         super.awakeFromNib()
-//        self.customization()
+        //        self.customization()
     } //  end of awake
     
 } // end of video cell
