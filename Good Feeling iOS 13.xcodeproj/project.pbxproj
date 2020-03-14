@@ -23,6 +23,10 @@
 		1CAC9C0C2413C372004F28E0 /* newbackground.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1CAC9C0A2413C372004F28E0 /* newbackground.pdf */; };
 		1CDADC3F24123FD200B6B00D /* light_background.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1CDADC3D24123FD200B6B00D /* light_background.pdf */; };
 		1CDADC4024123FD200B6B00D /* dark_background.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1CDADC3E24123FD200B6B00D /* dark_background.pdf */; };
+		1CDD10F0241A74A8007CBD6B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD10EF241A74A8007CBD6B /* HomeVC.swift */; };
+		1CDD10F2241A74DD007CBD6B /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD10F1241A74DD007CBD6B /* extensions.swift */; };
+		1CDD10F6241A7526007CBD6B /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD10F5241A7526007CBD6B /* Video.swift */; };
+		F89E39218FEE187072AC6684 /* Pods_Good_Feeling_iOS_13.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C5058B3F590FD18E801AC2B /* Pods_Good_Feeling_iOS_13.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +48,12 @@
 		1CAC9C0A2413C372004F28E0 /* newbackground.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = newbackground.pdf; path = Assets.xcassets/GreenBackground.imageset/newbackground.pdf; sourceTree = "<group>"; };
 		1CDADC3D24123FD200B6B00D /* light_background.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = light_background.pdf; path = Assets.xcassets/recbackground.imageset/light_background.pdf; sourceTree = "<group>"; };
 		1CDADC3E24123FD200B6B00D /* dark_background.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = dark_background.pdf; path = Assets.xcassets/recbackground.imageset/dark_background.pdf; sourceTree = "<group>"; };
+		1CDD10EF241A74A8007CBD6B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		1CDD10F1241A74DD007CBD6B /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		1CDD10F5241A7526007CBD6B /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		2C5058B3F590FD18E801AC2B /* Pods_Good_Feeling_iOS_13.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Good_Feeling_iOS_13.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		707C93C496857DE87989FAF2 /* Pods-Good Feeling iOS 13.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Good Feeling iOS 13.release.xcconfig"; path = "Target Support Files/Pods-Good Feeling iOS 13/Pods-Good Feeling iOS 13.release.xcconfig"; sourceTree = "<group>"; };
+		D6A2BC989D27F213B81DE913 /* Pods-Good Feeling iOS 13.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Good Feeling iOS 13.debug.xcconfig"; path = "Target Support Files/Pods-Good Feeling iOS 13/Pods-Good Feeling iOS 13.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F89E39218FEE187072AC6684 /* Pods_Good_Feeling_iOS_13.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +73,8 @@
 			children = (
 				1C554781240B745E00ED5C66 /* Good Feeling iOS 13 */,
 				1C554780240B745E00ED5C66 /* Products */,
+				63108445416B0146D5E870A4 /* Pods */,
+				9BE652AD0CE29FDFE12A18B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +120,7 @@
 				1CAC9C032413369F004F28E0 /* WeatherManager.swift */,
 				1CAC9C05241346D6004F28E0 /* WeatherData.swift */,
 				1CAC9C0724136354004F28E0 /* WeatherModel.swift */,
+				1CDD10F5241A7526007CBD6B /* Video.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -117,8 +131,28 @@
 				1C554786240B745E00ED5C66 /* FirstViewController.swift */,
 				1C554788240B745E00ED5C66 /* SecondViewController.swift */,
 				1C5547A024112CA200ED5C66 /* ThirdViewController.swift */,
+				1CDD10EF241A74A8007CBD6B /* HomeVC.swift */,
+				1CDD10F1241A74DD007CBD6B /* extensions.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		63108445416B0146D5E870A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6A2BC989D27F213B81DE913 /* Pods-Good Feeling iOS 13.debug.xcconfig */,
+				707C93C496857DE87989FAF2 /* Pods-Good Feeling iOS 13.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9BE652AD0CE29FDFE12A18B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C5058B3F590FD18E801AC2B /* Pods_Good_Feeling_iOS_13.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +162,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C554795240B746000ED5C66 /* Build configuration list for PBXNativeTarget "Good Feeling iOS 13" */;
 			buildPhases = (
+				893AB13909A510180FFE5852 /* [CP] Check Pods Manifest.lock */,
 				1C55477B240B745E00ED5C66 /* Sources */,
 				1C55477C240B745E00ED5C66 /* Frameworks */,
 				1C55477D240B745E00ED5C66 /* Resources */,
+				D191C7F216AC27F530F647FE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,6 +228,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		893AB13909A510180FFE5852 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Good Feeling iOS 13-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D191C7F216AC27F530F647FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Good Feeling iOS 13/Pods-Good Feeling iOS 13-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Good Feeling iOS 13/Pods-Good Feeling iOS 13-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Good Feeling iOS 13/Pods-Good Feeling iOS 13-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1C55477B240B745E00ED5C66 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -200,8 +278,11 @@
 				1CAC9C042413369F004F28E0 /* WeatherManager.swift in Sources */,
 				1C554789240B745E00ED5C66 /* SecondViewController.swift in Sources */,
 				1CAC9C06241346D6004F28E0 /* WeatherData.swift in Sources */,
+				1CDD10F0241A74A8007CBD6B /* HomeVC.swift in Sources */,
 				1C554787240B745E00ED5C66 /* FirstViewController.swift in Sources */,
+				1CDD10F2241A74DD007CBD6B /* extensions.swift in Sources */,
 				1C5547A124112CA200ED5C66 /* ThirdViewController.swift in Sources */,
+				1CDD10F6241A7526007CBD6B /* Video.swift in Sources */,
 				1C554783240B745E00ED5C66 /* AppDelegate.swift in Sources */,
 				1CAC9C0824136354004F28E0 /* WeatherModel.swift in Sources */,
 				1C554785240B745E00ED5C66 /* SceneDelegate.swift in Sources */,
@@ -346,6 +427,7 @@
 		};
 		1C554796240B746000ED5C66 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6A2BC989D27F213B81DE913 /* Pods-Good Feeling iOS 13.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -363,6 +445,7 @@
 		};
 		1C554797240B746000ED5C66 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 707C93C496857DE87989FAF2 /* Pods-Good Feeling iOS 13.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
