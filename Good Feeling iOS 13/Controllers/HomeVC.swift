@@ -15,12 +15,12 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UISc
     //MARK: - Properties
     @IBOutlet weak var tableView: UITableView!
     var videos = [Video]()
+    
     var lastContentOffset: CGFloat = 0.0
     
     // set infinity scroll; total video cells
-    let pageLimit = 10
-    var limit = 10
-    let totalEntries = 12
+    var limit = 8
+    let totalEntries = 16
     
     //MARK: Methods
     //    func customization() {
@@ -41,22 +41,22 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UISc
                 return
             }
             weakSelf.videos = response
-            weakSelf.videos.myShuffle()
-            //            weakSelf.tableView.reloadData()
+//            weakSelf.videos.myShuffle()
+//            weakSelf.tableView.reloadData()
         }
     }
     
     //MARK: Delegates
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Returns the number of rows (table cells) in a specified section.
-        //        print("the view will be called \(videos.count)times")
+        print("Prepare tabview, and the view will be called \(videos.count)times")
         return self.videos.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //Asks the data source for a cell to insert in a particular location of the table view.
         let cell = tableView.dequeueReusableCell(withIdentifier: "VideoCell") as! VideoCell
-        print("index row is \(indexPath.row)")
+        print("index row is now at \(indexPath.row)")
         cell.set(video: self.videos[indexPath.row])
         cell.playVideo()
         return cell
@@ -83,25 +83,33 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UISc
         if indexPath.row == videos.count - 1 {
             // we are at last cell
             if videos.count < totalEntries {
-                // we need to bring more records from server as there are some pending  records aviable
+// we need to bring more records from server as there are some pending  records aviable
                 videos.append(Video.init(title: ""))
-                
                 var index = videos.count
-                limit = index + 20
-                while index < limit {
+                let tempLimit = index + limit
+                while index < tempLimit
+                {
+                    print("when comparing, index is\(index)")
+                    print("when compparing, templimit is \(tempLimit)")
                     videos.append(Video.init(title: ""))
                     index = index + 1
+                    print("after plusone index equals \(index)")
                 }
-                
-            }
+                print("video count still smaller then entry")
+            } else
+            {
+                print("video counts is now larger than total entry")
+            } // end of if totla entry
+// load more data to do infinity scroll
 //            self.perform(#selector(loadTable), with: nil, afterDelay: 1)
             print("after load data video count is \(videos.count)")
         }
     }
-    
-//    @objc func loadTable() {
-//        self.tableView.reloadData()
-//    }
+
+//     load more data to do infinity scroll
+//        @objc func loadTable() {
+//            self.tableView.reloadData()
+//        }
     
     
     //MARK: -  ViewController Lifecylce
@@ -111,8 +119,12 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UISc
         //        self.customization()
         // fetch data, particluarl video data
         self.fetchData()
+        print("\(videos.count) video container after view did load")
     }
-}
+} //  end HomeVC
+
+
+
 //TableView Custom Classes
 class VideoCell: UITableViewCell {
     
@@ -122,7 +134,6 @@ class VideoCell: UITableViewCell {
     @IBOutlet weak var channelPic: UIImageView!
     @IBOutlet weak var videoTitle: UILabel!
     @IBOutlet weak var videoDescription: UILabel!
-    
     
     // get a group of video IDs
     let titles = ["8JwCrgEZK8k", "fLiozP7GVeA", " 76Rx2HjNYwc", "wQWmRIHavC8", "8IYm8OFbzOE", "B_bbBglPGHA", "PPmvRCO4VWo", "1UKIaTQ-V8M", "ue1NT3QhuVU", "VSceuiPBpxY", "tDQBCJAC5lQ", "AhdtowFDKT0"]

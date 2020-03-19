@@ -1,0 +1,6 @@
+framework module Pods_Good_Feeling_iOS_13 {
+  umbrella header "Pods-Good Feeling iOS 13-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -167,7 +167,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="223.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="lNh-2S-JHp" userLabel="two_led_stack">
-                                                <rect key="frame" x="35" y="61" width="344" height="102"/>
+                                                <rect key="frame" x="35" y="60.5" width="344" height="102"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LED" translatesAutoresizingMaskIntoConstraints="NO" id="4eE-m8-1zf">
                                                         <rect key="frame" x="0.0" y="0.0" width="150" height="102"/>
