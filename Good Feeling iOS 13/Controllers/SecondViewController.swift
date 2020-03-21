@@ -77,7 +77,7 @@ class SecondViewController: UIViewController {
     @IBAction func trainTimeSliderButton(_ sender: UISlider) {
         let roundValue = round(sender.value / timerStep ) * timerStep
         let timer = roundValue
-        trainingTime.text = "\(timer)min"
+        trainingTime.text = "\(timer)分"
         totalTime = Int(roundValue) * 60
         
         // change text
@@ -89,7 +89,7 @@ class SecondViewController: UIViewController {
         
         let roundvalue = round(sender.value / intervalStep) * intervalStep
         let interval = roundvalue
-        reactiveTime.text = "\(interval)s"
+        reactiveTime.text = "\(interval)秒"
         
     }
     
@@ -100,8 +100,8 @@ class SecondViewController: UIViewController {
         leftLED.backgroundColor = UIColor.blue
         
         
-        trainingTime.text = "0 min"
-        reactiveTime.text = "0 s"
+        trainingTime.text = "0 分"
+        reactiveTime.text = "0 秒"
         trainTimeSlider.value = 0.0
         reactTimeSlider.value = 0.0
         

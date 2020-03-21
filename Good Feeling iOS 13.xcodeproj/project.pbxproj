@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		1C4CABEE2422EB5800D3974B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C55478D240B746000ED5C66 /* Assets.xcassets */; };
 		1C4CABEF2422EB5800D3974B /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1C55479E241123D700ED5C66 /* alarm_sound.mp3 */; };
-		1C4CABF12422EB5800D3974B /* dark_background.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1CDADC3E24123FD200B6B00D /* dark_background.pdf */; };
-		1C4CABF22422EB5800D3974B /* light_background.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1CDADC3D24123FD200B6B00D /* light_background.pdf */; };
 		1C4CABF92422F04100D3974B /* Pods_Good_Feeling_iOS_13.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2C5058B3F590FD18E801AC2B /* Pods_Good_Feeling_iOS_13.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1C554783240B745E00ED5C66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C554782240B745E00ED5C66 /* AppDelegate.swift */; };
 		1C554785240B745E00ED5C66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C554784240B745E00ED5C66 /* SceneDelegate.swift */; };
@@ -19,15 +17,17 @@
 		1C55478C240B745E00ED5C66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C55478A240B745E00ED5C66 /* Main.storyboard */; };
 		1C554791240B746000ED5C66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C55478F240B746000ED5C66 /* LaunchScreen.storyboard */; };
 		1C5547A124112CA200ED5C66 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5547A024112CA200ED5C66 /* ThirdViewController.swift */; };
-		1C9887EA242595240029107A /* appbackground.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1C9887E9242595230029107A /* appbackground.pdf */; };
-		1C9887EC242596820029107A /* appbackgrounddark.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1C9887EB242596820029107A /* appbackgrounddark.pdf */; };
+		1C9887EF2425A46A0029107A /* Pods_Good_Feeling_iOS_13.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C5058B3F590FD18E801AC2B /* Pods_Good_Feeling_iOS_13.framework */; };
+		1C9887F12425D4190029107A /* dark_background.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1C9887F02425D4190029107A /* dark_background.pdf */; };
+		1C9887F52425D4C30029107A /* appbackgrounddark.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1C9887F42425D4C30029107A /* appbackgrounddark.pdf */; };
+		1C9887F72425D5750029107A /* light_background.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1C9887F62425D5750029107A /* light_background.pdf */; };
+		1C9887F92425D58F0029107A /* appbackground.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1C9887F82425D58F0029107A /* appbackground.pdf */; };
 		1CAC9C042413369F004F28E0 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAC9C032413369F004F28E0 /* WeatherManager.swift */; };
 		1CAC9C06241346D6004F28E0 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAC9C05241346D6004F28E0 /* WeatherData.swift */; };
 		1CAC9C0824136354004F28E0 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAC9C0724136354004F28E0 /* WeatherModel.swift */; };
 		1CDD10F0241A74A8007CBD6B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD10EF241A74A8007CBD6B /* HomeVC.swift */; };
 		1CDD10F2241A74DD007CBD6B /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD10F1241A74DD007CBD6B /* extensions.swift */; };
 		1CDD10F6241A7526007CBD6B /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD10F5241A7526007CBD6B /* Video.swift */; };
-		639069C4D5CC4831E39E15A4 /* Pods_Good_Feeling_iOS_13.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92BB1B4A2CD8148BB8E53919 /* Pods_Good_Feeling_iOS_13.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,13 +62,14 @@
 		1C9887DB2422F4E00029107A /* YoutubePlayer_in_WKWebView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YoutubePlayer_in_WKWebView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C9887DE242304260029107A /* YoutubePlayer_in_WKWebView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YoutubePlayer_in_WKWebView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C9887E6242307D20029107A /* YoutubePlayer_in_WKWebView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YoutubePlayer_in_WKWebView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C9887E9242595230029107A /* appbackground.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = appbackground.pdf; path = Assets.xcassets/GreenBackground.imageset/appbackground.pdf; sourceTree = "<group>"; };
-		1C9887EB242596820029107A /* appbackgrounddark.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = appbackgrounddark.pdf; path = Assets.xcassets/GreenBackground.imageset/appbackgrounddark.pdf; sourceTree = "<group>"; };
+		1C9887ED2425A32C0029107A /* YoutubePlayer_in_WKWebView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YoutubePlayer_in_WKWebView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C9887F02425D4190029107A /* dark_background.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = dark_background.pdf; sourceTree = "<group>"; };
+		1C9887F42425D4C30029107A /* appbackgrounddark.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = appbackgrounddark.pdf; path = Assets.xcassets/GreenBackground.imageset/appbackgrounddark.pdf; sourceTree = "<group>"; };
+		1C9887F62425D5750029107A /* light_background.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = light_background.pdf; path = Assets.xcassets/recbackground.imageset/light_background.pdf; sourceTree = "<group>"; };
+		1C9887F82425D58F0029107A /* appbackground.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = appbackground.pdf; path = Assets.xcassets/GreenBackground.imageset/appbackground.pdf; sourceTree = "<group>"; };
 		1CAC9C032413369F004F28E0 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 		1CAC9C05241346D6004F28E0 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		1CAC9C0724136354004F28E0 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
-		1CDADC3D24123FD200B6B00D /* light_background.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = light_background.pdf; path = Assets.xcassets/recbackground.imageset/light_background.pdf; sourceTree = "<group>"; };
-		1CDADC3E24123FD200B6B00D /* dark_background.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = dark_background.pdf; path = Assets.xcassets/recbackground.imageset/dark_background.pdf; sourceTree = "<group>"; };
 		1CDD10EF241A74A8007CBD6B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		1CDD10F1241A74DD007CBD6B /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		1CDD10F5241A7526007CBD6B /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
@@ -83,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				639069C4D5CC4831E39E15A4 /* Pods_Good_Feeling_iOS_13.framework in Frameworks */,
+				1C9887EF2425A46A0029107A /* Pods_Good_Feeling_iOS_13.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,10 +122,10 @@
 				1C55479E241123D700ED5C66 /* alarm_sound.mp3 */,
 				1C55478F240B746000ED5C66 /* LaunchScreen.storyboard */,
 				1C554792240B746000ED5C66 /* Info.plist */,
-				1CDADC3E24123FD200B6B00D /* dark_background.pdf */,
-				1CDADC3D24123FD200B6B00D /* light_background.pdf */,
-				1C9887E9242595230029107A /* appbackground.pdf */,
-				1C9887EB242596820029107A /* appbackgrounddark.pdf */,
+				1C9887F82425D58F0029107A /* appbackground.pdf */,
+				1C9887F42425D4C30029107A /* appbackgrounddark.pdf */,
+				1C9887F62425D5750029107A /* light_background.pdf */,
+				1C9887F02425D4190029107A /* dark_background.pdf */,
 			);
 			path = "Good Feeling iOS 13";
 			sourceTree = "<group>";
@@ -180,6 +181,7 @@
 		9BE652AD0CE29FDFE12A18B6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1C9887ED2425A32C0029107A /* YoutubePlayer_in_WKWebView.framework */,
 				1C9887E6242307D20029107A /* YoutubePlayer_in_WKWebView.framework */,
 				1C9887DE242304260029107A /* YoutubePlayer_in_WKWebView.framework */,
 				1C9887DB2422F4E00029107A /* YoutubePlayer_in_WKWebView.framework */,
@@ -252,13 +254,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C9887EC242596820029107A /* appbackgrounddark.pdf in Resources */,
+				1C9887F52425D4C30029107A /* appbackgrounddark.pdf in Resources */,
+				1C9887F12425D4190029107A /* dark_background.pdf in Resources */,
+				1C9887F92425D58F0029107A /* appbackground.pdf in Resources */,
 				1C4CABEE2422EB5800D3974B /* Assets.xcassets in Resources */,
+				1C9887F72425D5750029107A /* light_background.pdf in Resources */,
 				1C4CABEF2422EB5800D3974B /* alarm_sound.mp3 in Resources */,
-				1C4CABF12422EB5800D3974B /* dark_background.pdf in Resources */,
-				1C4CABF22422EB5800D3974B /* light_background.pdf in Resources */,
 				1C554791240B746000ED5C66 /* LaunchScreen.storyboard in Resources */,
-				1C9887EA242595240029107A /* appbackground.pdf in Resources */,
 				1C55478C240B745E00ED5C66 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

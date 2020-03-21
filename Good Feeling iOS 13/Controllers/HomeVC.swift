@@ -19,7 +19,7 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UISc
     var lastContentOffset: CGFloat = 0.0
     
     // set infinity scroll; total video cells
-    var limit = 8
+    var limit = 5
     let totalEntries = 16
     
     //MARK: Methods
@@ -136,7 +136,7 @@ class VideoCell: UITableViewCell {
     @IBOutlet weak var videoDescription: UILabel!
     
     // get a group of video IDs
-    let titles = ["8JwCrgEZK8k", "fLiozP7GVeA", " 76Rx2HjNYwc", "wQWmRIHavC8", "8IYm8OFbzOE", "B_bbBglPGHA", "PPmvRCO4VWo", "1UKIaTQ-V8M", "ue1NT3QhuVU", "VSceuiPBpxY", "tDQBCJAC5lQ", "AhdtowFDKT0"]
+    let titles = ["1UKIaTQ-V8M", "jtAyhXBt6pA", "dOet1dDe4Dg", "UlPls4dic5I", "AhdtowFDKT0"]
     
     var myVideo:[String] = Array()
     
