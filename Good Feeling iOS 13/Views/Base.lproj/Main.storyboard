@@ -94,15 +94,15 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="训练指南：多喝热水;" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Lmg-tt-gqj" userLabel="Suggestion">
-                                        <rect key="frame" x="20" y="248" width="374" height="127"/>
+                                        <rect key="frame" x="20" y="248" width="374" height="117"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2zj-GS-WVV">
-                                        <rect key="frame" x="194" y="392" width="200" height="90"/>
+                                        <rect key="frame" x="194" y="382" width="200" height="100"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="nah-J5-qA4"/>
+                                            <constraint firstAttribute="height" constant="100" id="nah-J5-qA4"/>
                                             <constraint firstAttribute="width" constant="200" id="sEH-aa-dTg"/>
                                         </constraints>
                                     </imageView>
@@ -217,7 +217,7 @@
                                         <rect key="frame" x="0.0" y="317" width="414" height="97.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="训练时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtg-xQ-aI0">
-                                                <rect key="frame" x="20" y="3.5" width="120" height="20"/>
+                                                <rect key="frame" x="20" y="4" width="120" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="SEa-36-UCv"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="V2t-xb-yV3"/>
@@ -227,7 +227,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fee-iy-j51">
-                                                <rect key="frame" x="294" y="3.5" width="120" height="20"/>
+                                                <rect key="frame" x="294" y="4" width="120" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="UFd-Dy-kMN"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="r7m-ug-H3F"/>
@@ -237,7 +237,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="UbY-XX-q0J">
-                                                <rect key="frame" x="8" y="33.5" width="398" height="31"/>
+                                                <rect key="frame" x="8" y="34" width="398" height="31"/>
                                                 <color key="tintColor" red="0.2156862745" green="0.0" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <connections>
                                                     <action selector="trainTimeSliderButton:" destination="8rJ-Kc-sve" eventType="valueChanged" id="0fG-Md-TD2"/>
@@ -387,11 +387,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Liq-jl-d0Z">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="客服热线：+1 (919) 886 5507" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7GY-AI-ul7">
                                 <rect key="frame" x="20" y="334" width="414" height="50"/>
-                                <color key="backgroundColor" red="0.97640663390000004" green="0.96867471930000004" blue="0.96470648049999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="u7c-fo-oPb"/>
                                 </constraints>
@@ -407,7 +406,6 @@
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="作者：Jordanlake" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TJM-RI-kCI">
                                 <rect key="frame" x="20" y="392" width="414" height="50"/>
-                                <color key="backgroundColor" red="0.97640663390000004" green="0.96867471930000004" blue="0.96470648049999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="cNW-3t-bCV"/>
                                 </constraints>
@@ -418,16 +416,16 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Liq-jl-d0Z" firstAttribute="leading" secondItem="QwC-mG-Wj2" secondAttribute="leading" id="1OW-Dt-Wll"/>
+                            <constraint firstItem="Liq-jl-d0Z" firstAttribute="leading" secondItem="oeN-hv-5Pp" secondAttribute="leading" id="1OW-Dt-Wll"/>
                             <constraint firstItem="7GY-AI-ul7" firstAttribute="top" secondItem="1At-Lq-hR3" secondAttribute="bottom" constant="80" id="DpI-sK-Rso"/>
                             <constraint firstItem="1At-Lq-hR3" firstAttribute="top" secondItem="QwC-mG-Wj2" secondAttribute="top" constant="80" id="FIt-Gd-d5T"/>
                             <constraint firstItem="TJM-RI-kCI" firstAttribute="leading" secondItem="QwC-mG-Wj2" secondAttribute="leading" constant="20" id="VGJ-rf-bgy"/>
                             <constraint firstItem="TJM-RI-kCI" firstAttribute="trailing" secondItem="QwC-mG-Wj2" secondAttribute="trailing" constant="20" id="Vlw-sa-gYH"/>
                             <constraint firstItem="7GY-AI-ul7" firstAttribute="leading" secondItem="QwC-mG-Wj2" secondAttribute="leading" constant="20" id="Vtp-6e-XzO"/>
-                            <constraint firstItem="Liq-jl-d0Z" firstAttribute="trailing" secondItem="QwC-mG-Wj2" secondAttribute="trailing" id="Y5C-bl-7s7"/>
-                            <constraint firstItem="Liq-jl-d0Z" firstAttribute="bottom" secondItem="QwC-mG-Wj2" secondAttribute="bottom" id="YIr-up-6Rl"/>
+                            <constraint firstItem="Liq-jl-d0Z" firstAttribute="trailing" secondItem="oeN-hv-5Pp" secondAttribute="trailing" id="Y5C-bl-7s7"/>
+                            <constraint firstItem="Liq-jl-d0Z" firstAttribute="bottom" secondItem="oeN-hv-5Pp" secondAttribute="bottom" id="YIr-up-6Rl"/>
                             <constraint firstItem="1At-Lq-hR3" firstAttribute="leading" secondItem="QwC-mG-Wj2" secondAttribute="leading" id="aSs-UB-Xhu"/>
-                            <constraint firstItem="Liq-jl-d0Z" firstAttribute="top" secondItem="QwC-mG-Wj2" secondAttribute="top" id="e3d-uf-cqj"/>
+                            <constraint firstItem="Liq-jl-d0Z" firstAttribute="top" secondItem="oeN-hv-5Pp" secondAttribute="top" id="e3d-uf-cqj"/>
                             <constraint firstItem="7GY-AI-ul7" firstAttribute="trailing" secondItem="QwC-mG-Wj2" secondAttribute="trailing" constant="20" id="hgZ-Il-mww"/>
                             <constraint firstItem="TJM-RI-kCI" firstAttribute="top" secondItem="7GY-AI-ul7" secondAttribute="bottom" constant="8" symbolic="YES" id="kqe-SW-EZx"/>
                             <constraint firstItem="1At-Lq-hR3" firstAttribute="leading" secondItem="QwC-mG-Wj2" secondAttribute="leading" id="ynU-fI-4vI"/>
@@ -606,7 +604,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="GreenBackground" width="819" height="1032"/>
+        <image name="GreenBackground" width="600" height="846"/>
         <image name="LED" width="256" height="256"/>
         <image name="location.circle.fill" catalog="system" width="64" height="60"/>
         <image name="logo" width="500" height="300"/>

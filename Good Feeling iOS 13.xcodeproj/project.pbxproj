@@ -11,8 +11,6 @@
 		1C4CABEF2422EB5800D3974B /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1C55479E241123D700ED5C66 /* alarm_sound.mp3 */; };
 		1C4CABF12422EB5800D3974B /* dark_background.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1CDADC3E24123FD200B6B00D /* dark_background.pdf */; };
 		1C4CABF22422EB5800D3974B /* light_background.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1CDADC3D24123FD200B6B00D /* light_background.pdf */; };
-		1C4CABF32422EB5800D3974B /* newbackground_dark.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1CAC9C092413C372004F28E0 /* newbackground_dark.pdf */; };
-		1C4CABF42422EB5800D3974B /* newbackground.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1CAC9C0A2413C372004F28E0 /* newbackground.pdf */; };
 		1C4CABF92422F04100D3974B /* Pods_Good_Feeling_iOS_13.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2C5058B3F590FD18E801AC2B /* Pods_Good_Feeling_iOS_13.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1C554783240B745E00ED5C66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C554782240B745E00ED5C66 /* AppDelegate.swift */; };
 		1C554785240B745E00ED5C66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C554784240B745E00ED5C66 /* SceneDelegate.swift */; };
@@ -21,6 +19,8 @@
 		1C55478C240B745E00ED5C66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C55478A240B745E00ED5C66 /* Main.storyboard */; };
 		1C554791240B746000ED5C66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C55478F240B746000ED5C66 /* LaunchScreen.storyboard */; };
 		1C5547A124112CA200ED5C66 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5547A024112CA200ED5C66 /* ThirdViewController.swift */; };
+		1C9887EA242595240029107A /* appbackground.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1C9887E9242595230029107A /* appbackground.pdf */; };
+		1C9887EC242596820029107A /* appbackgrounddark.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1C9887EB242596820029107A /* appbackgrounddark.pdf */; };
 		1CAC9C042413369F004F28E0 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAC9C032413369F004F28E0 /* WeatherManager.swift */; };
 		1CAC9C06241346D6004F28E0 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAC9C05241346D6004F28E0 /* WeatherData.swift */; };
 		1CAC9C0824136354004F28E0 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAC9C0724136354004F28E0 /* WeatherModel.swift */; };
@@ -62,11 +62,11 @@
 		1C9887DB2422F4E00029107A /* YoutubePlayer_in_WKWebView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YoutubePlayer_in_WKWebView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C9887DE242304260029107A /* YoutubePlayer_in_WKWebView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YoutubePlayer_in_WKWebView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C9887E6242307D20029107A /* YoutubePlayer_in_WKWebView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YoutubePlayer_in_WKWebView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C9887E9242595230029107A /* appbackground.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = appbackground.pdf; path = Assets.xcassets/GreenBackground.imageset/appbackground.pdf; sourceTree = "<group>"; };
+		1C9887EB242596820029107A /* appbackgrounddark.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = appbackgrounddark.pdf; path = Assets.xcassets/GreenBackground.imageset/appbackgrounddark.pdf; sourceTree = "<group>"; };
 		1CAC9C032413369F004F28E0 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 		1CAC9C05241346D6004F28E0 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		1CAC9C0724136354004F28E0 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
-		1CAC9C092413C372004F28E0 /* newbackground_dark.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = newbackground_dark.pdf; path = Assets.xcassets/GreenBackground.imageset/newbackground_dark.pdf; sourceTree = "<group>"; };
-		1CAC9C0A2413C372004F28E0 /* newbackground.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = newbackground.pdf; path = Assets.xcassets/GreenBackground.imageset/newbackground.pdf; sourceTree = "<group>"; };
 		1CDADC3D24123FD200B6B00D /* light_background.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = light_background.pdf; path = Assets.xcassets/recbackground.imageset/light_background.pdf; sourceTree = "<group>"; };
 		1CDADC3E24123FD200B6B00D /* dark_background.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = dark_background.pdf; path = Assets.xcassets/recbackground.imageset/dark_background.pdf; sourceTree = "<group>"; };
 		1CDD10EF241A74A8007CBD6B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -123,8 +123,8 @@
 				1C554792240B746000ED5C66 /* Info.plist */,
 				1CDADC3E24123FD200B6B00D /* dark_background.pdf */,
 				1CDADC3D24123FD200B6B00D /* light_background.pdf */,
-				1CAC9C092413C372004F28E0 /* newbackground_dark.pdf */,
-				1CAC9C0A2413C372004F28E0 /* newbackground.pdf */,
+				1C9887E9242595230029107A /* appbackground.pdf */,
+				1C9887EB242596820029107A /* appbackgrounddark.pdf */,
 			);
 			path = "Good Feeling iOS 13";
 			sourceTree = "<group>";
@@ -252,13 +252,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C9887EC242596820029107A /* appbackgrounddark.pdf in Resources */,
 				1C4CABEE2422EB5800D3974B /* Assets.xcassets in Resources */,
 				1C4CABEF2422EB5800D3974B /* alarm_sound.mp3 in Resources */,
 				1C4CABF12422EB5800D3974B /* dark_background.pdf in Resources */,
 				1C4CABF22422EB5800D3974B /* light_background.pdf in Resources */,
-				1C4CABF32422EB5800D3974B /* newbackground_dark.pdf in Resources */,
-				1C4CABF42422EB5800D3974B /* newbackground.pdf in Resources */,
 				1C554791240B746000ED5C66 /* LaunchScreen.storyboard in Resources */,
+				1C9887EA242595240029107A /* appbackground.pdf in Resources */,
 				1C55478C240B745E00ED5C66 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,7 +477,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jordanlake.Good-Feeling-iOS-13";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jordanlakecn.GoodFeeling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -499,7 +499,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jordanlake.Good-Feeling-iOS-13";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jordanlakecn.GoodFeeling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
